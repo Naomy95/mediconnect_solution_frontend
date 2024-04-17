@@ -3,11 +3,11 @@ import logo from "../../assets/images/logo1.png";
 import location from "../../assets/images/location.png";
 import phone from "../../assets/images/phone.png";
 import login from "../../assets/images/login.png";
-import loginmb from "../../assets/images/loginmb.png";
+// import loginmb from "../../assets/images/loginmb.png";
 import AppointmentButton from "../buttons/AppointmentButton";
-import LoginModalForm from "../login/LoginModalForm";
+// import LoginModalForm from "../login/LoginModalForm";
 import { useNavigate } from "react-router-dom";
-import menu from '../../assets/images/menu.png'
+import menu from "../../assets/images/menu.png";
 
 const Navbar = () => {
   const token = localStorage.getItem("access_token");
@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="navbar px-4 bg-white lg:bg-navbarcolor lg:px-28 shadow-lg">
         <div className="navbar-start">
           <div className="dropdown lg:hidden">
-            <label tabIndex={0} >
+            <label tabIndex={0}>
               <svg
                 xmlns={menu}
                 className="h-5 w-5"
@@ -76,10 +76,11 @@ const Navbar = () => {
                   <a href="/blogs">Blogs</a>
                 </li>
               ) : (
-                <li onClick={()=>navigate('/login')} className="text-white text-md hover:bg-hoverBackground hover:text-black mr-4 font-sans">
-                 
-                    <a>Blogs</a>
-                
+                <li
+                  onClick={() => navigate("/login")}
+                  className="text-white text-md hover:bg-hoverBackground hover:text-black mr-4 font-sans"
+                >
+                  <a>Blogs</a>
                 </li>
               )}
 
@@ -108,17 +109,17 @@ const Navbar = () => {
               //   <a href="/login">Blogs</a>
               // </li>
               <li className="text-white text-md hover:bg-hoverBackground hover:text-black mr-4 font-sans">
-              <label htmlFor="my-modal-4" >
-                <a>Blogs</a>
-              </label>
-              <input
-                type="checkbox"
-                id="my-modal-4"
-                className="modal-toggle"
-              />
-    
-              <LoginModalForm />
-            </li>
+                <label htmlFor="my-modal-4">
+                  <a>Blogs</a>
+                </label>
+                <input
+                  type="checkbox"
+                  id="my-modal-4"
+                  className="modal-toggle"
+                />
+
+                {/* <LoginModalForm /> */}
+              </li>
             )}
 
             {/* The button to open modal */}
@@ -128,12 +129,12 @@ const Navbar = () => {
         <div className="navbar-center lg:hidden ">
           <img src={logo} className="h-14 w-44 mr-8 " alt="Best Care" />
         </div>
-        
+
         <div className="navbar-end">
           <div className="lg:flex hidden  lg:items-center  p-2 border rounded-md border-[1px] border-white">
             <img className="w-1 h-1 lg:w-1/2 lg:h-1/2" src={login} alt="" />
 
-            {token ? (
+            {/* {token ? (
               <div className="flex ">
                 <a
                   className=" text-white text-xs lg:text-lg hover:bg-hoverBackground hover:text-black font-sans lg:pl-2"
@@ -154,30 +155,25 @@ const Navbar = () => {
                 ></img>
               </div>
             ) : (
-              <label >
+              <label>
                 {" "}
                 <a className=" lg:text-white border-[1px] border-buttoncolor p-2 lg:p-0 rounded-lg text-buttoncolor  text-md hover:bg-hoverBackground hover:text-black mr-4 font-sans ml-2 font-semibold lg:font-normal">
                   Login
                 </a>
                 <input
-                type="checkbox"
-                id="login-modal"
-                className="modal-toggle"
-              />
-              
-              <LoginModalForm />
+                  type="checkbox"
+                  id="login-modal"
+                  className="modal-toggle"
+                />
+                <LoginModalForm />
               </label>
-             
-           
-           
-            )}
+            )} */}
+
           </div>
 
           <div className="flex  lg:hidden  border rounded-md border-[1px] border-white">
-
-            {token ? (
+            {/* {token ? (
               <div>
-               
                 <img
                   className="lg:hidden w-10 h-10"
                   src={loginmb}
@@ -188,20 +184,18 @@ const Navbar = () => {
                 ></img>
               </div>
             ) : (
-              <label onClick={()=>{navigate('/login')}}>
+              <label
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
                 {" "}
                 <a className=" lg:text-white border-[1px] border-buttoncolor p-2 lg:p-0 rounded-lg text-buttoncolor  text-md hover:bg-hoverBackground hover:text-black  font-sans ml-2 font-semibold lg:font-normal">
                   Login
                 </a>
-            
               </label>
-             
-           
-           
-            )}
+            )} */}
           </div>
-
-  
         </div>
       </div>
     </div>
