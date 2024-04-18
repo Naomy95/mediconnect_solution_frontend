@@ -27,7 +27,7 @@ const Footer = () => {
 <div className="flex mb-2 text-white font-sans items-center">
             <img src={location} className="mr-2 w-4 h-5 " alt="" />
             <p className="text-md font-normal font-sans text-white">
-              82 Baridhara, Dhaka
+            54-56 ul.reja, Wroclaw, Poland
             </p>
           </div>
           <div className="flex mb-2 text-white font-sans items-center">

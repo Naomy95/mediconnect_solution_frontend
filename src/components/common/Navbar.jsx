@@ -17,13 +17,13 @@ const Navbar = () => {
     <div className="bg-black">
       <div className="navbar bg-base-100 px-2  py-2 hidden lg:flex lg:px-28">
         <div className="navbar-start">
-          <img src={logo} className="h-16 w-56" alt="Best Care" />
+          {/* <img src={logo} className="h-16 w-56" alt="Best Care" /> */}
         </div>
         <div className="navbar-center hidden lg:flex ">
           <div className="flex mr-20">
             <img src={location} className="mr-2 w-4 h-5" alt="" />
             <p className="text-md font-normal font-sans text-black">
-              82 Baridhara, Dhaka
+              54-56 ul.reja, Wroclaw, Poland
             </p>
           </div>
           <div className="flex px-10">
