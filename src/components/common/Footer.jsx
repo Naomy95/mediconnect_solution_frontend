@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='bg-buttoncolor grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-28 md:px-12'>
         <div className='flex flex-col justify-start lg:py-10 py-2'>
-        <img src={logo} className="h-18 w-56" alt="Best Care" />
+        <img src={logo} className="h-18 w-56" alt="MediConnect Solution"/>
 
         <p className='text-white pt-6'>Find us in Social Media</p>
         <div className='flex py-2'>
@@ -27,12 +27,12 @@ const Footer = () => {
 <div className="flex mb-2 text-white font-sans items-center">
             <img src={location} className="mr-2 w-4 h-5 " alt="" />
             <p className="text-md font-normal font-sans text-white">
-              82 Baridhara, Dhaka
+              Hogwarts 27, 50-370, Wroclaw, Poland
             </p>
           </div>
           <div className="flex mb-2 text-white font-sans items-center">
             <img src={phone} className="mr-2 w-4 h-5" alt="" />
-            <p className="text-md font-normal font-sans text-white">+880-12345678</p>
+            <p className="text-md font-normal font-sans text-white">123456789</p>
           </div>
 
           <div className='flex text-white font-sans items-center'>
