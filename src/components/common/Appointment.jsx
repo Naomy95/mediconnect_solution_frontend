@@ -80,6 +80,40 @@ const Appointment = () => {
           ></input>
         </div>
 
+        <div className="mb-6">
+          <label
+            htmlFor="email"
+            className="block mb-2 text-sm font-medium text-black"
+          >
+            Select Department
+          </label>
+          <input
+            type="text"
+            id="department"
+            
+            className="border-[2px] border-slate-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5"
+            required
+          ></input>
+        </div>
+
+        <div className="mb-6">
+          <label
+            htmlFor="email"
+            className="block mb-2 text-sm font-medium text-black"
+          >
+            * Select Doctor
+          </label>
+          <input
+            type="text"
+            id="doctor"
+            
+            className="border-[2px] border-slate-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5"
+            required
+          ></input>
+        </div>
+
+
+
        <div className="mb-6">
           <label
             htmlFor="message"
