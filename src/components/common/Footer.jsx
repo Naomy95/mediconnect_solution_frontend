@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='bg-buttoncolor grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-28 md:px-12'>
         <div className='flex flex-col justify-start lg:py-10 py-2'>
-        <img src={logo} className="h-18 w-56" alt="Best Care" />
+        {/* <img src={logo} className="h-18 w-56" alt="Best Care" /> */}
 
         <p className='text-white pt-6'>Find us in Social Media</p>
         <div className='flex py-2'>
