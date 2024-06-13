@@ -6,6 +6,7 @@ import './App.css'
 import LandingPage from './pages/LandingPage'
 // import Login from './pages/Login'
 import ServicePage from './pages/ServicePage'
+import AboutClinic from './pages/AboutClinic'
 
 
 
@@ -22,7 +23,7 @@ function App() {
         <Route path='/' element={<LandingPage /> } />
         <Route path='/home' element={<LandingPage /> } />
         <Route path='/services' element={ <ServicePage />  } />
-        {/* <Route path='/aboutclinic' element={<AboutClinic /> } /> */}
+        <Route path='/aboutclinic' element={<AboutClinic /> } />
         {/* <Route path='/login' element={<Login />} /> */}
       </Routes>
        
